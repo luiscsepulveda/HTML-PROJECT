@@ -1,0 +1,1110 @@
+/* Font from google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@300&display=swap');
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+body{
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(85,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(122,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='4.619999999999999'%3E%3Cpath transform='translate(-71.75 -3.1999999999999993) rotate(-7.25 1409 581) scale(0.9191649999999999)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='1.54' transform='translate(-114.5 62) rotate(1.0999999999999996 800 450) scale(0.996762)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(-0.1999999999999993 -28.5) rotate(-6.5 401 736) scale(0.996762)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='1.4'%3E%3Cpath transform='translate(372 10.2) rotate(-2.55 150 345) scale(1.0070549999999998)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='3.08' transform='translate(-55.5 -172.5) rotate(-28.799999999999997 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-176 40) rotate(-4.800000000000001 1400 132) scale(0.825)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
+/* Whatsapp btn  - Luis Code   */
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #ffffff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 45px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.466);
+    z-index: 100;
+}
+
+.btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+/* Navbar start here  - Luis Code  */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    z-index: 100;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
+    transition: 0.5s;
+}
+
+.header:hover::before {
+    left: 100%;
+    
+}
+
+.logo {
+    width: 200px;
+    cursor: default;
+}
+
+
+.navbar a {
+    color: rgb(199, 131, 21);
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+/* Hyperlinks states */
+.navbar a:link {
+    color: rgb(206, 120, 0);
+}
+
+/* visited link */
+.navbar a:visited {
+    color: rgb(43, 28, 250);
+}
+
+/* mouse over link */
+.navbar a:hover {
+    color: rgb(255, 0, 68);
+}
+
+/* selected link */
+.navbar a:active {
+    color: blue;
+}
+
+.navbar a:hover {
+    color: rgb(255, 0, 68);
+}
+
+#menu-icon {
+    font-size: 36px;
+    color: #000000;
+    display: none;
+} 
+/* Navbar finished here - Luis Code  */
+
+
+.main__container{
+    margin-top: 10rem;
+}
+
+                    /* Home - Julian start here */ 
+
+/* Estilos adicionales para pantallas pequeñas (menos de 600px) */
+@media only screen and (max-width: 600px) {
+    
+
+    /* Container styles for product items on small screens */
+    .product__container,
+    .product__container2 {
+        flex-direction: row; /* Display products in a row on small screens */
+    }
+
+    /* Individual product styles on small screens */
+    .product {
+        width: calc(50% - 20px); /* Adjust the width for two products per row with spacing */
+    }
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container {
+    width: 75%;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+img {
+    width: 100%;
+}
+
+/* Container styles for product items */
+.product__container,
+.product__container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Individual product styles */
+.product {
+    width: calc(33.33% - 20px);
+    /* Calculate the width to have three products per row with spacing between them */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    /* Add a border to create a card */
+    padding: 15px;
+    /* Add internal space to separate the content from the border */
+    border-radius: 8px;
+    /* Rounded corners for a smoother appearance */
+    background-color: #f5f0f0;
+    /* White background for each card */
+    transition: transform 0.3s ease-in-out;
+    /* Transition effect on hover */
+}
+
+.product:hover {
+    transform: scale(1.05);
+    /* Slightly zoom in on hover */
+}
+
+/* ... (additional code) ... */
+
+/* Home - Julian ends here */ 
+
+                /* Products - Felipe code start here */
+
+.title__container{
+    margin-top: 15rem;
+}
+
+
+.title__products{
+    font-size: 60px;
+    text-align: center;
+}
+
+.subtitle__products{
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+.p__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 400px;
+    padding: 17px;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.card__image {
+    width: 300px;
+    height: auto;
+    
+}
+
+.p__card .product_details span {
+    font-size: 13px;
+    color: #000000;
+}
+
+.p__card .product_details h5 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.p__card .product_details h2 {
+    font-size: 20px;
+}
+
+.p__card .product_details .star {
+    color: goldenrod;
+}
+
+.p__card .product_details p {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    margin: 15px 0;
+}
+
+.p__card .product_details button {
+    float: center;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 15px;
+}
+
+.p__card .product_details button a {
+    color: black;
+    
+}
+
+.p__card .product_details button a:hover {
+    color: white;
+}
+/* Products - Felipe code ends here */
+
+                /* About Us - Luis Code star here */
+
+.q {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.q .qa {
+    text-align: center;
+    margin-top: 4rem;
+    margin: 1rem;
+}
+
+.q .qa h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: start;
+}
+
+.q .qa p {
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 25px;
+    color: #000000;
+    text-align: start;
+}
+
+.title__aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+}
+
+.title__aboutus h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+}
+
+.hashtag {
+    animation: hashtag 4s linear infinite both;
+}
+
+@keyframes hashtag {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    10.1% {
+        opacity: 1;
+        text-shadow: none;
+    }
+
+    10.2% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    20% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    20.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+
+    20.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    30% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    30.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    30.5% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    30.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    45% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    45.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    55% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    55.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    57% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    57.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+
+    60% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+
+    60.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    65% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    65.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    75% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    75.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    77% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    77.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    85% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    85.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    86% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    86.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+}
+
+.section__contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.section__contact h3 {
+    font-size: 230px;
+}
+
+
+/* Card Team start*/
+
+.team__container{
+width: 100%;
+height: auto;
+margin-bottom: 3rem;
+
+}h2{
+    font-size: 45px;
+    text-align: center;
+    color: #000000;
+
+}
+.team__cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px 0 15px 15px;
+    
+}
+
+.card__image {
+    transition: transform 0.5s;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.card__image:hover {
+    transform: scale(1.1);
+}
+.card:hover {
+    animation: card 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes card {
+    0% {
+        transform: translateZ(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }100% {
+        transform: translateZ(50px);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+}
+/* Card team finish */
+
+
+            /* Contact - Carlos code start here */
+.section__container{
+    margin-top: 6rem;
+}
+
+
+.contactUs {
+    position: relative;
+    width: 100%;
+    padding: 30px 40px;     
+}
+
+.contactUs .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.contactUs .title h2 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.form {
+    grid-area: form;
+}
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.contact {
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+        "form info"
+        "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contact h3 {
+    color: #81d7ff;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* form*/
+
+.formBox {
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50 {
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox {
+    width: 100%;
+}
+
+.inputBox span {
+    color: #18b7ff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.inputBox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"] {
+    background: #ff578b;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+.inputBox ::placeholder {
+    color: #999;
+}
+
+/* Info */
+
+.info {
+    background: #0e3959;
+}
+
+.info h3 {
+    color: #fff;
+}
+
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infoBox div p {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.info .infoBox div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sci {
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a {
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+
+.sci li a:hover {
+    color: #fff;
+}
+
+.map {
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design*/
+
+@media (max-width: 991px) {
+    
+
+    .contactUs {
+        padding: 60px;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "form"
+            "info"
+            "map";
+    }
+
+    .formBox .row50 {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 30px;
+    }
+
+    .map {
+        min-height: 300px;
+        padding: 0;
+    }
+}
+/*  CONTACT carlos code finish here */
+
+
+        /* Footer start here  - Luis Code star here */
+
+.footer__container {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.columnOne {
+    text-align: center;
+}
+
+p {
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.columnSecond {
+    text-align: center;
+
+}
+
+h5 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+li {
+    list-style: none;
+    margin: 15px;
+
+}
+
+a {
+    color: white;
+
+}
+
+/* unvisited link */
+a:link {
+    color: rgb(0, 255, 229);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(199, 131, 21);
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(226, 31, 129);
+}
+
+/* selected link */
+a:active {
+    color: rgb(246, 255, 0);
+}
+
+.columnThird {
+    text-align: center;
+}
+
+.mailForm {
+    height: 30px;
+    border-radius: 10px;
+}
+
+.sentForm {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+
+}
+
+.sentForm {
+    transition-duration: 0.4s;
+}
+
+.sentForm:hover {
+    background-color: #b3820f;
+    /* Green */
+    color: white;
+}
+
+.payments {
+    margin-top: 35px;
+
+}
+
+/* Footer ends here */
+
+
+                    /* BREAK-POINTS for media queries*/
+@media screen and (max-width: 480px) {
+    
+    .title__aboutus h2 {
+        font-size: 30px;
+    }
+
+    .title__container{
+        margin-top: 10rem;
+    }
+    .title__products{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .subtitle__products{
+        font-size: 20px;
+        text-align: center;
+        
+    }
+    
+    .footer__container {
+        width: 100%;
+        height: auto;
+        background-color: rgb(19, 19, 19);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .columnThird {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .form__Container {
+        text-align: center;
+    }
+
+    .mailForm {
+        height: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .sentForm {
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #menu-icon {
+        display: block;
+
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem 4%;
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+        font-size: 30px;
+    }
+
+    .nav-bg {
+        position: absolute;
+        top: 79px;
+        left: 0;
+        width: 100%;
+        height: 350px;
+        
+        background: rgba(75, 22, 22, 0.1);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        z-index: 99;
+        display: none;
+    }
+
+    .nav-bg.active {
+        display: block;
+    }
+
+    /* About Us */
+    .title__aboutus {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    /* .title__aboutus h2 {
+        font-size: 60px;
+    } */
+
+    .section__contact {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    .nameCard {
+        width: 300px;
+        height: 300px;
+        margin: 30px;
+    }
+
+    .nameCard .front h3 {
+        width: 300px;
+        height: 300px;
+        line-height: 300px;
+        color: #2c2d4c;
+    }
+
+    .nameCard .back h3 {
+        font-size: 70px;
+        margin-top: 90px;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding: 1.25rem 4%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .team__container{
+        margin-top: 30px;
+    }
+    
+    .team__cards{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        
+    }
+    /* .title__aboutus h2 {
+        font-size: 60px;
+    } */
+    .footer__container {
+        width: 100%;
+        height: auto;
+        background-color: rgb(19, 19, 19);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+        padding: 30px;
+
+    }
+
+    
+
+
+
+    .columnThird {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .form__Container {
+        text-align: center;
+    }
+
+    .mailForm {
+        height: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .sentForm {
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+    /* Footer finish here  - Luis Code star here */
+
+
